@@ -4,14 +4,20 @@ import random
 class GameBoard:
     def __init__(self, board):
         self.board = board
-
+    
     def get_letters_to_numbers():
+        """
+        this function converts the letters into numbers
+        """
         letters_to_numbers = {
             'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
 
         return letters_to_numbers
 
     def print_board(self):
+        """
+        this function creates the board in the terminal
+        """
         print('A B C D E F G H')
         print('+-+-+-+-+-+-+-+')
         row_number = 1
@@ -25,6 +31,9 @@ class Battleship:
         self.board = board
 
     def create_ships(self):
+        """
+        This function randomly places 5 ships on the board
+        """
         for i in range(5):
             self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
             
@@ -36,6 +45,9 @@ class Battleship:
         return self.board
 
     def get_user_input(self):
+        """
+        This function allows the user to input their choice of row and column
+        """
         try:
             x_row = input('Enter the row of the ship: ')
             while x_row not in '12345678':
@@ -53,6 +65,9 @@ class Battleship:
             return self.get_user_input()
             
     def count_hit_ships(self):
+        """
+        This funciton records the current score of ships hit
+        """
         hit_ships = 0
         for row in self.board:
             for column in row:
@@ -62,6 +77,9 @@ class Battleship:
 
   
 def RunGame(): 
+    """
+    This is the main game function for the game to run
+    """
     computer_board = GameBoard([[' '] * 8 for i in range(8)])
     user_guess_board = GameBoard([[' '] * 8 for i in range(8)])
     Battleship.create_ships(computer_board)
