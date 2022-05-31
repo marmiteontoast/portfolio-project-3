@@ -4,7 +4,7 @@ import random
 class GameBoard:
     def __init__(self, board):
         self.board = board
-    
+
     def get_letters_to_numbers():
         """
         this function converts the letters into numbers
@@ -35,11 +35,13 @@ class Battleship:
         This function randomly places 5 ships on the board
         """
         for i in range(5):
-            self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
-            
+            self.x_row, self.y_column = random.randint(0, 7
+                                                       ), random.randint(0, 7)
+
             while self.board[self.x_row][self.y_column] == 'x':
-                self.x_row, self.y_column = random.randint(0, 7), random.randint(0, 7)
-               
+                self.x_row, self.y_column = random.randint(0, 7),
+                random.randint(0, 7)
+
             self.board[self.x_row][self.y_column] = 'x'
 
         return self.board
@@ -63,7 +65,7 @@ class Battleship:
         except ValueError and KeyError:
             print("Not a valid input")
             return self.get_user_input()
-            
+
     def count_hit_ships(self):
         """
         This funciton records the current score of ships hit
@@ -75,8 +77,8 @@ class Battleship:
                     hit_ships += 1
         return hit_ships
 
-  
-def RunGame(): 
+
+def RunGame():
     """
     This is the main game function for the game to run
     """
@@ -114,4 +116,4 @@ def RunGame():
 
 
 if __name__ == '__main__':
-    RunGame()  
+    RunGame()
