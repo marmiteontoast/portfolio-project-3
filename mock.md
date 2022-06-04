@@ -52,3 +52,33 @@ if you run out of turns before finding all the computers ships, the game ends.
 - ##### you can't input the same guess twice
 
 <h2><img src='images/guess-twice-img.png'>
+
+
+# Testing 
+### I have manually tested the code with the following:
+- i have passed my the code through PEP8 linter and confirmed there are no issues.
+- tested on in gitpod terminal and Code institute mock terminal on Heroku
+
+##  bugs
+
+ ### solved bugs
+
+- when writing the code for the project i was getting the error 'e501'. i solved it by indenting the code after the opening Parentheses.
+
+## Remaining Bugs
+
+-  One of the 'E501' errors remain. I currently have not figured out a way to indent this line of code without generating a syntax error. So far any attempt stops the code from whole game from working.
+
+<h2><img src='images/error-e501-img.png'>
+
+# Deployment
+
+This project was deployed using Code Institute's mock terminal on Heroku.
+
+- how to deploy:
+    - click 'create new app' in Heroku
+    - Set choose buildbacks python and NodeJS in that order
+    - choose GitHub as your deployment method then click connect
+    - link your repository to Heroku by inputing your reopository name
+    - click on Deploy
+
