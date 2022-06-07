@@ -58,6 +58,7 @@ if you run out of turns before finding all the computers ships, the game ends.
 ### I have manually tested the code with the following:
 - i have passed my the code through PEP8 linter and confirmed there are no issues.
 - tested on in gitpod terminal and Code institute mock terminal on Heroku
+- I have given invalid inputs. i have put numbers when when i should input a letter, out of bounds and have put in the same input.
 
 ##  bugs
 
@@ -82,3 +83,8 @@ This project was deployed using Code Institute's mock terminal on Heroku.
     - link your repository to Heroku by inputing your reopository name
     - click on Deploy
 
+
+# Credits
+
+- Credt goes to gbrough over on github for providing the code. link can be found [here](https://github.com/gbrough/battleship/blob/main/single_player_OO.py)
+- Code Institute for the deployment terminal
